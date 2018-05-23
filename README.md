@@ -4,9 +4,9 @@ Quantified Self is an exercise in creating RESTful APIs in three different langu
 
 Below are the repositories for each Quantified Self application:
 
-[Ruby on Rails](https://github.com/memcmahon/quantified_self)
-[Node.js](https://github.com/memcmahon/quantified-self-express)
-[Elixir](https://github.com/memcmahon/quantified-self-phoenix)
+* [Ruby on Rails](https://github.com/memcmahon/quantified_self)
+* [Node.js](https://github.com/memcmahon/quantified-self-express)
+* [Elixir](https://github.com/memcmahon/quantified-self-phoenix)
 
 The instructions for starting each of these locally can be found on their individual repos. The following information is common to the three applicaitons above.
 
@@ -18,8 +18,12 @@ The instructions for starting each of these locally can be found on their indivi
 
 ### Food Endpoints
 
-```GET /api/v1/foods```
-```GET /api/v1/foods/:id```
+```
+GET /api/v1/foods
+```
+```
+GET /api/v1/foods/:id
+```
 ```
 POST /api/v1/foods
    with body: { "food": { "name": "Name of food here", "calories": "Calories here"} }
@@ -28,10 +32,20 @@ POST /api/v1/foods
 PATCH /api/v1/foods
    with body: { "food": { "name": "Name of food here", "calories": "Calories here"} }
 ```
-```DELETE /api/v1/foods/:id```
+```
+DELETE /api/v1/foods/:id
+```
 
 ### Meal Endpoints
-```GET /api/v1/meals```
-```GET /api/v1/meals/:meal_id/foods```
-```POST /api/v1/meals/:meal_id/foods/:food_id```
-```DELETE /api/v1/meals/:meal_id/foods/:food_id```
+```
+GET /api/v1/meals
+```
+```
+GET /api/v1/meals/:meal_id/foods
+```
+```
+POST /api/v1/meals/:meal_id/foods/:food_id
+```
+```
+DELETE /api/v1/meals/:meal_id/foods/:food_id
+```
